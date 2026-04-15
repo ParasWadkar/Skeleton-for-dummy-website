@@ -3,27 +3,189 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dummy Website</title>
+    <title>Nova Studio | Creative Dummy Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="is-loading">
 
-    <header>
-        <h1>My Dummy Website</h1>
-        <p>This is a simple starter template</p>
+    <div id="pageLoader" class="page-loader" aria-live="polite" aria-label="Page loading">
+        <div class="loader-frame">
+            <div class="loader-nav">
+                <div class="skeleton skeleton-pill loader-logo"></div>
+                <div class="loader-nav-links">
+                    <div class="skeleton skeleton-pill nav-link"></div>
+                    <div class="skeleton skeleton-pill nav-link"></div>
+                    <div class="skeleton skeleton-pill nav-link"></div>
+                </div>
+                <div class="skeleton skeleton-pill loader-btn"></div>
+            </div>
+
+            <div class="loader-main">
+                <div class="loader-hero">
+                    <div class="loader-copy">
+                        <div class="skeleton skeleton-pill w-35"></div>
+                        <div class="skeleton skeleton-line w-95"></div>
+                        <div class="skeleton skeleton-line w-85"></div>
+                        <div class="skeleton skeleton-line w-65"></div>
+                        <div class="loader-stats">
+                            <div class="skeleton skeleton-card"></div>
+                            <div class="skeleton skeleton-card"></div>
+                            <div class="skeleton skeleton-card"></div>
+                        </div>
+                    </div>
+                    <div class="skeleton skeleton-box loader-hero-image"></div>
+                </div>
+
+                <div class="loader-about">
+                    <div class="skeleton skeleton-box loader-about-card"></div>
+                    <div class="loader-about-images">
+                        <div class="skeleton skeleton-box loader-about-image"></div>
+                        <div class="skeleton skeleton-box loader-about-image"></div>
+                    </div>
+                </div>
+
+                <div class="loader-service-grid">
+                    <div class="skeleton skeleton-box loader-service-card"></div>
+                    <div class="skeleton skeleton-box loader-service-card"></div>
+                    <div class="skeleton skeleton-box loader-service-card"></div>
+                </div>
+
+                <div class="loader-gallery">
+                    <div class="skeleton skeleton-box loader-gallery-item"></div>
+                    <div class="skeleton skeleton-box loader-gallery-item"></div>
+                    <div class="skeleton skeleton-box loader-gallery-item"></div>
+                    <div class="skeleton skeleton-box loader-gallery-item"></div>
+                </div>
+
+                <div class="skeleton skeleton-box loader-contact"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-shape bg-shape-1" aria-hidden="true"></div>
+    <div class="bg-shape bg-shape-2" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <nav class="container nav">
+            <h1 class="logo">Nova Studio</h1>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-btn" onclick="sayHello()">Say Hi</button>
+        </nav>
     </header>
 
     <main>
-        <section>
-            <h2>About</h2>
-            <p>This is just a dummy site for practice.</p>
+        <section class="hero container reveal">
+            <div class="hero-copy">
+                <p class="eyebrow">Creative Design Playground</p>
+                <h2>Build bold ideas into memorable digital experiences.</h2>
+                <p>
+                    This upgraded dummy website now includes modern UI patterns,
+                    richer content blocks, and dummy imagery you can replace with your own.
+                </p>
+                <div class="hero-actions">
+                    <button class="primary-btn" onclick="scrollToSection('services')">Explore Services</button>
+                    <button class="ghost-btn" onclick="scrollToSection('contact')">Get in Touch</button>
+                </div>
+                <div class="stats-grid">
+                    <article>
+                        <h3>120+</h3>
+                        <p>Concepts delivered</p>
+                    </article>
+                    <article>
+                        <h3>45</h3>
+                        <p>Brands partnered</p>
+                    </article>
+                    <article>
+                        <h3>4.9/5</h3>
+                        <p>Average satisfaction</p>
+                    </article>
+                </div>
+            </div>
+            <div class="hero-image-wrap">
+                <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80" alt="Team collaborating around a desk" class="hero-image">
+            </div>
         </section>
 
-        <section>
-            <h2>Contact</h2>
-            <button onclick="sayHello()">Click Me</button>
+        <section id="about" class="about container reveal">
+            <div class="about-card">
+                <h2>About This Demo</h2>
+                <p>
+                    Use this as a foundation for your portfolio, startup landing page,
+                    or project showcase. Every section here is intentionally modular
+                    so you can edit text, colors, and cards quickly.
+                </p>
+                <ul>
+                    <li>Responsive layout for desktop and mobile</li>
+                    <li>Subtle animations and reveal effects</li>
+                    <li>Ready-to-replace dummy images and content</li>
+                </ul>
+            </div>
+            <div class="about-image-grid">
+                <img src="https://picsum.photos/seed/studio1/500/340" alt="Workspace detail">
+                <img src="https://picsum.photos/seed/studio2/500/340" alt="Creative planning board">
+            </div>
+        </section>
+
+        <section id="services" class="services container reveal">
+            <h2>What We Can Build</h2>
+            <div class="cards-grid">
+                <article class="service-card">
+                    <h3>Brand Identity</h3>
+                    <p>Visual direction, logo systems, and cohesive style guides for product teams.</p>
+                </article>
+                <article class="service-card">
+                    <h3>Web Design</h3>
+                    <p>Fast, modern, and accessible interfaces for marketing and product websites.</p>
+                </article>
+                <article class="service-card">
+                    <h3>Prototyping</h3>
+                    <p>Interactive mockups to test ideas quickly before full development starts.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="work" class="gallery container reveal">
+            <div class="gallery-head">
+                <h2>Recent Dummy Projects</h2>
+                <p>Swap these with your own portfolio shots or product screenshots later.</p>
+            </div>
+            <div class="gallery-grid">
+                <img src="https://picsum.photos/seed/work1/700/500" alt="Project preview 1">
+                <img src="https://picsum.photos/seed/work2/700/500" alt="Project preview 2">
+                <img src="https://picsum.photos/seed/work3/700/500" alt="Project preview 3">
+                <img src="https://picsum.photos/seed/work4/700/500" alt="Project preview 4">
+            </div>
+        </section>
+
+        <section class="testimonial container reveal">
+            <blockquote>
+                “Clean structure, strong visual identity, and easy customization.
+                This is exactly what a starter website should feel like.”
+            </blockquote>
+            <p>- Dummy Client, Product Lead</p>
+        </section>
+
+        <section id="contact" class="contact container reveal">
+            <h2>Let’s Create Something Great</h2>
+            <p>
+                You can now replace this content with your own brand story,
+                service details, and contact links.
+            </p>
+            <button class="primary-btn" onclick="sayHello()">Start a Conversation</button>
         </section>
     </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 Nova Studio. Built as a customizable practice template.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>

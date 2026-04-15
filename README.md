@@ -34,7 +34,7 @@ dummy-website/
 
 ## Live Demo
 
-(i will put the live link here)
+https://paraswadkar.github.io/Skeleton-for-dummy-website/
 
 ---
 
@@ -58,7 +58,7 @@ This project is made to:
 
 ## Author
 
-Your Name
+Paras Pitu Wadkar
 
 ---
 
