@@ -1,7 +1,8 @@
-# Dummy Website
+# Seleton For Dummy Website
 
 A simple and clean dummy website built using **HTML, CSS, and JavaScript**.
 This project is created for practicing basic web development and learning how to deploy code using GitHub.
+the main objective of this page is to make skeleton for the website so that if i ever need to make it in the future i should know how to do it 
 
 ---
 
@@ -11,6 +12,7 @@ This project is created for practicing basic web development and learning how to
 * Simple styling (CSS)
 * Interactive button using JavaScript
 * Beginner-friendly and easy to understand
+* Skeleton 
 
 ---
 
